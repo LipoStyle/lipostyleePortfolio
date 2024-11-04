@@ -1,0 +1,159 @@
+/* Hero section */
+.hero {
+  width: 100%;
+  height: 80vh;
+  background-image: url(../../../images/homeimages/background-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Position relative to contain the overlay */
+}
+
+/* Overlay for the hero section */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0b323a80; /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-content h1 {
+  color: #f2e2d0;
+  font-size: 60px;
+}
+
+.hero-content .hero-profession {
+  font-style: italic;
+  color: #f2e2d0;
+  font-size: 24px;
+}
+
+/* Enhanced styling for the quote */
+.hero-content .quote {
+  margin: 0 auto;
+  padding: 20px 30px;
+  max-width: 70%;
+  color: #f2e2d0;
+  background-color: rgba(130, 167, 198, 0.322); /* Subtle transparent background */
+  font-style: italic;
+  font-size: 24px;
+  letter-spacing: 1px;
+  border-left: 4px solid #ebbd32; /* Gold accent border */
+  border-radius: 8px; /* Slightly rounded corners */
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Subtle hover effect on the quote */
+.hero-content .quote:hover {
+  border-left-color: #ffd700;
+}
+
+/* CTA Buttons */
+.hero-cta-buttons {
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-cta-buttons .button-56:nth-child(1),
+.hero-cta-buttons .button-56:nth-child(2) {
+  width: fit-content;
+}
+
+.hero-cta-buttons .button-56:nth-child(3) {
+  grid-column: span 2;
+  width: 80%;
+  justify-self: center;
+}
+
+/* Media Query for Large Screens (1200px and below) */
+@media (max-width: 1200px) {
+  .hero-content h1 {
+    font-size: 52px;
+  }
+
+  .hero-content .quote {
+    font-size: 22px;
+    max-width: 75%;
+    padding: 18px 25px;
+  }
+
+  .hero-cta-buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Media Query for Tablets (768px and below) */
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+
+  .hero-content .quote {
+    font-size: 20px;
+    padding: 15px 20px;
+    max-width: 85%;
+  }
+
+  .hero-content .hero-profession {
+    font-size: 20px;
+  }
+
+  .hero-cta-buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Media Query for Mobile (500px and below) */
+@media (max-width: 500px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-profession {
+    font-size: 18px;
+  }
+
+  .hero-content .quote {
+    font-size: 18px;
+    padding: 12px 15px;
+    max-width: 90%;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .hero-cta-buttons {
+    grid-template-columns: 1fr; /* Stack buttons vertically on mobile */
+    gap: 16px;
+  }
+}

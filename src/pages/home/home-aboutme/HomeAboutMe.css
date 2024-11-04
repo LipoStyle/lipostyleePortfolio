@@ -1,0 +1,78 @@
+.home-about-me{
+  /* height: 60vh; */
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background-color: #ff6347b3;
+}
+
+.home-about-me h2{
+  color: #f2e2d0;
+  font-size: 52px;
+  letter-spacing: 2px;
+}
+
+.home-about-me p{
+  margin: 0 auto;
+  width: 60%;
+  color: #0f436b; 
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.home-about-me .button{
+  position: relative;
+  z-index: 1;
+}
+
+.home-about-me .button-56{
+  background-color: #f2e2d0;
+}
+
+.home-about-me .button-56::after{
+  background-color: #4682b4;
+}
+
+.home-about-me .button-56:hover{
+  background-color: #4682b4;
+  color: #f2e2d0;
+}
+
+/* Media Query for Tablets (768px) */
+@media (max-width: 768px) {
+  .home-about-me h2 {
+    font-size: 40px;
+  }
+  .home-about-me p {
+    width: 80%; /* Increase width for better readability on smaller screens */
+    font-size: 16px;
+  }
+  .home-about-me {
+    padding: 16px; /* Adjust padding for smaller screens */
+  }
+  .home-about-me .button-56 {
+    padding: 10px 20px; /* Reduce padding for buttons */
+  }
+}
+
+/* Media Query for Mobile (500px) */
+@media (max-width: 500px) {
+  .home-about-me h2 {
+    font-size: 32px; /* Smaller heading for mobile */
+  }
+  .home-about-me p {
+    width: 90%; /* Full width on smaller devices */
+    font-size: 12px; /* Smaller font for mobile */
+    letter-spacing: 1;
+  }
+  .home-about-me {
+    padding: 12px; /* Smaller padding for compact layout */
+  }
+  .home-about-me .button-56 {
+    padding: 8px 16px; /* Adjust button padding for mobile */
+    font-size: 14px;
+  }
+}

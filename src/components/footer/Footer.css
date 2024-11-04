@@ -1,0 +1,115 @@
+/* Footer container */
+.footer {
+  background-color: #0b323a; /* Dark teal background */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Logo styling for the footer */
+.footer-logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+/* Each letter styling */
+.footer .letter {
+  font-size: 1.8rem; /* Slightly smaller than the logo */
+  font-weight: bold;
+  margin: 0 3px;
+  display: inline-block;
+}
+
+/* Different styles for each character */
+.footer .c, .footer .e-2 {
+  color: #ff6347; /* Tomato for the © symbol */
+  font-family: 'Arial', sans-serif;
+}
+
+.footer .year-2, .footer .year-0, .footer .year-4 {
+  color: #32cd32; /* Lime Green for the year */
+  font-family: 'Georgia', serif;
+}
+
+.footer .l {
+  color: #1e90ff; /* Dodger Blue */
+  font-family: 'Verdana', sans-serif;
+}
+
+.footer .i {
+  color: #32cd32; /* Lime Green */
+  font-family: 'Georgia', serif;
+}
+
+.footer .p {
+  color: #ff1493; /* Deep Pink */
+  font-family: 'Courier New', monospace;
+}
+
+.footer .o {
+  color: #ffd700; /* Gold */
+  font-family: 'Lucida Console', monospace;
+}
+
+.footer .s {
+  color: #4682b4; /* SteelBlue */
+  font-family: 'Verdana', sans-serif;
+}
+
+.footer .t {
+  color: #8a2be2; /* BlueViolet */
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.footer .y {
+  color: #ff4500; /* OrangeRed */
+  font-family: 'Times New Roman', serif;
+}
+
+.footer .l-2 {
+  color: #4682b4; /* SteelBlue */
+  font-family: 'Tahoma', sans-serif;
+}
+
+.footer .e {
+  color: #00ced1; /* DarkTurquoise */
+  font-family: 'Impact', sans-serif;
+}
+
+.footer .space {
+  width: 10px; /* For spacing between words and symbols */
+}
+
+/* Remove transitions and animations for footer letters */
+.footer-logo .letter {
+  transition: none; /* No transitions */
+  text-shadow: none; /* No shadows or effects */
+}
+
+/* Remove any pseudo-elements */
+.footer-logo .letter::before, .footer-logo .letter::after {
+  content: none; /* No pseudo-elements */
+}
+
+/* Responsive adjustments for screens 500px and below */
+@media (max-width: 500px) {
+  /* Reduce font size */
+  .footer .letter {
+    font-size: 1.2rem; /* Smaller font size for small screens */
+    margin: 0 2px;     /* Reduced margin between letters */
+  }
+
+  /* Adjust spacing */
+  .footer .space {
+    width: 5px; /* Less space between words and symbols */
+  }
+
+  /* Ensure footer text is vertically aligned and centered */
+  .footer-logo {
+    flex-direction: row;  /* Keep text in one line if possible */
+    flex-wrap: wrap;      /* Wrap text if it overflows */
+    text-align: center;
+  }
+}

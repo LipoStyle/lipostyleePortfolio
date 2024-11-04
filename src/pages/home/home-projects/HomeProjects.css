@@ -1,0 +1,159 @@
+/* Projects Section */
+.projects-section {
+  padding: 60px 0px;
+  background-color: rgb(130, 167, 198);
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 48px;
+  color: #f2e2d0;
+  margin-bottom: 40px;
+}
+
+/* Projects Container */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+/* Individual Project */
+.project {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 320px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Project Image */
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Project Information */
+.project-info {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-info h3 {
+  font-size: 24px;
+  color: #0f436b;
+  margin-bottom: 12px;
+}
+
+.project-info p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Project Buttons */
+.project-buttons {
+  display: flex;
+  gap: 12px;
+}
+.project:nth-child(1) .project-buttons .button-56 {
+  background-color: #29a24d;
+    border-radius: 20px;
+    color: #fff;
+    font-style: italic;
+    font-weight: normal;
+    transition: all .1s ease-in-out;
+    border: 0;
+}
+.project:nth-child(1) .project-buttons .button-56:hover {
+  background-color: #59c58f;
+    color: #0b2c52;
+    transform: translate(.2rem, .2rem);
+}
+.project:nth-child(1) .project-buttons .button-56::after,
+.project:nth-child(2) .project-buttons .button-56::after {
+  height: 0;
+}
+.project:nth-child(2) .project-buttons .button-56 {
+  background-color: #04345c;
+  border: none;
+  border-radius: 5px;
+  color: #5ce4e4;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: normal;
+  transition: all .3s ease-in-out;
+}
+.project:nth-child(2) .project-buttons .button-56:hover {
+  background-color: #5ce4e4;
+  color: #04345c;
+}
+
+/* Responsive Design */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .projects-section h2 {
+    font-size: 36px;
+  }
+
+  .project-info h3 {
+    font-size: 20px;
+  }
+
+  .project-info p {
+    font-size: 14px;
+  }
+
+  .project-buttons .button {
+    font-size: 13px;
+  }
+}
+
+/* Mobile (500px and below) */
+@media (max-width: 500px) {
+  .projects-section h2 {
+    font-size: 32px;
+  }
+
+  .project-info h3 {
+    font-size: 18px;
+  }
+
+  .project-info p {
+    font-size: 13px;
+  }
+
+  .project-buttons {
+    /* flex-direction: column; */
+    align-items: center;
+  }
+
+  .project-buttons .button {
+    padding: 8px 16px;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+  }
+}
