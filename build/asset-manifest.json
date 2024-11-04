@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ec60092d.css",
+    "main.js": "/static/js/main.1a61ffed.js",
+    "static/js/453.f3841e31.chunk.js": "/static/js/453.f3841e31.chunk.js",
+    "static/media/background-hero.png": "/static/media/background-hero.27a0286d63e6d30d18d4.png",
+    "static/media/smart-ride.png": "/static/media/smart-ride.285556ffad7f9ba4915d.png",
+    "static/media/background-image.jpg": "/static/media/background-image.311e85fcac4c2f817167.jpg",
+    "static/media/e-nutritionist.png": "/static/media/e-nutritionist.81f31332c92691878ef4.png",
+    "static/media/ruby.svg": "/static/media/ruby.9f7d96b6408a011abd1477050bc77a09.svg",
+    "static/media/postgresql.svg": "/static/media/postgresql.5554dfac6639fb169614c251cd1f6bc0.svg",
+    "static/media/RoR.svg": "/static/media/RoR.d9a4ab53af3014a5b343cc7d349bc4ae.svg",
+    "static/media/react.svg": "/static/media/react.f57b349b4d9df56c9b48c916a8d5adfb.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "static/media/javascript.svg": "/static/media/javascript.7bb08cdbe94fc2dfc1b51be8c2dae551.svg",
+    "static/media/css.svg": "/static/media/css.315b8fdb9dbf75ae965b80bf368895cd.svg",
+    "static/media/html.svg": "/static/media/html.0107c93943a8f415b5db64ebb0a9d12d.svg",
+    "main.ec60092d.css.map": "/static/css/main.ec60092d.css.map",
+    "main.1a61ffed.js.map": "/static/js/main.1a61ffed.js.map",
+    "453.f3841e31.chunk.js.map": "/static/js/453.f3841e31.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec60092d.css",
+    "static/js/main.1a61ffed.js"
+  ]
+}
