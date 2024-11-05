@@ -1,159 +1,120 @@
+/* HomeProjects.css */
+
 /* Projects Section */
 .projects-section {
-  padding: 60px 0px;
+  padding: 60px;
   background-color: rgb(130, 167, 198);
   text-align: center;
 }
 
 .projects-section h2 {
-  font-size: 48px;
+  font-size: 3rem;
   color: #f2e2d0;
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
 }
 
-/* Projects Container */
-.projects-container {
+/* Projects Grid */
+.featured-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 24px;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
-/* Individual Project */
-.project {
-  background-color: #fff;
-  border-radius: 10px;
+/* Project Card */
+.project-card {
+  position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 320px;
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
-.project:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-/* Project Image */
 .project-image {
   width: 100%;
   height: auto;
+  transition: transform 0.3s ease;
 }
 
-/* Project Information */
-.project-info {
-  margin: 0 auto;
-  padding: 20px;
-  text-align: left;
+.project-card:hover .project-image {
+  transform: scale(1.1);
+}
 
+/* Overlay */
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  transition: opacity 0.3s ease;
 }
 
-.project-info h3 {
-  font-size: 24px;
-  color: #0f436b;
-  margin-bottom: 12px;
+.project-card:hover .project-overlay {
+  opacity: 1;
 }
 
-.project-info p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
+.project-overlay h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.project-overlay p {
+  font-size: 1rem;
+  margin: 0.5rem 0;
   text-align: center;
 }
 
-/* Project Buttons */
-.project-buttons {
-  display: flex;
-  gap: 12px;
-}
-.project:nth-child(1) .project-buttons .button-56 {
-  background-color: #29a24d;
-    border-radius: 20px;
-    color: #fff;
-    font-style: italic;
-    font-weight: normal;
-    transition: all .1s ease-in-out;
-    border: 0;
-}
-.project:nth-child(1) .project-buttons .button-56:hover {
-  background-color: #59c58f;
-    color: #0b2c52;
-    transform: translate(.2rem, .2rem);
-}
-.project:nth-child(1) .project-buttons .button-56::after,
-.project:nth-child(2) .project-buttons .button-56::after {
-  height: 0;
-}
-.project:nth-child(2) .project-buttons .button-56 {
-  background-color: #04345c;
+/* Buttons */
+.project-buttons button {
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
   border: none;
-  border-radius: 5px;
-  color: #5ce4e4;
+  background-color: #ff7f50;
+  color: white;
   cursor: pointer;
-  font-size: 16px;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: normal;
-  transition: all .3s ease-in-out;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
-.project:nth-child(2) .project-buttons .button-56:hover {
-  background-color: #5ce4e4;
-  color: #04345c;
+
+.project-buttons button:hover {
+  background-color: #ff6347;
 }
 
 /* Responsive Design */
-
-/* Tablets (768px and below) */
 @media (max-width: 768px) {
   .projects-section h2 {
-    font-size: 36px;
+    font-size: 2.5rem;
   }
 
-  .project-info h3 {
-    font-size: 20px;
+  .project-overlay h3 {
+    font-size: 1.25rem;
   }
 
-  .project-info p {
-    font-size: 14px;
-  }
-
-  .project-buttons .button {
-    font-size: 13px;
+  .project-overlay p {
+    font-size: 0.875rem;
   }
 }
 
-/* Mobile (500px and below) */
 @media (max-width: 500px) {
   .projects-section h2 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
-  .project-info h3 {
-    font-size: 18px;
-  }
-
-  .project-info p {
-    font-size: 13px;
-  }
-
-  .project-buttons {
-    /* flex-direction: column; */
-    align-items: center;
-  }
-
-  .project-buttons .button {
-    padding: 8px 16px;
-    font-size: 12px;
-    width: 100%;
-    text-align: center;
+  .project-buttons button {
+    font-size: 0.875rem;
+    padding: 0.5rem;
   }
 }

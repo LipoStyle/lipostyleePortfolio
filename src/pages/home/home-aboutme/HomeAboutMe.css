@@ -1,54 +1,79 @@
-.home-about-me{
-  /* height: 60vh; */
+/* HomeAboutMe.css */
+
+/* Keyframes for slide-in animation */
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px); /* Start position: 20px down */
+    opacity: 0; /* Start opacity: 0 */
+  }
+  100% {
+    transform: translateY(0); /* End position: normal */
+    opacity: 1; /* End opacity: 1 */
+  }
+}
+
+/* Fade-in class to apply the animation */
+.fade-in {
+  animation: slideIn 2s ease forwards; /* Animation duration and easing */
+}
+
+/* Styles for the home-about-me section */
+.home-about-me {
   padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
-  background-color: #ff6347b3;
+  gap: 24px;
+  background-color: #ff6347b3; /* Background color */
 }
 
-.home-about-me h2{
-  color: #f2e2d0;
-  font-size: 52px;
-  letter-spacing: 2px;
+/* Styles for the h2 element */
+.home-about-me h2 {
+  color: #f2e2d0; /* Heading color */
+  font-size: 52px; /* Heading font size */
+  letter-spacing: 2px; /* Spacing between letters */
 }
 
-.home-about-me p{
-  margin: 0 auto;
-  width: 60%;
-  color: #0f436b; 
-  letter-spacing: 2px;
-  text-align: center;
+/* Styles for the paragraph element */
+.home-about-me p {
+  margin: 0 auto; /* Center the paragraph */
+  width: 60%; /* Width of the paragraph */
+  color: #0f436b; /* Paragraph color */
+  letter-spacing: 2px; /* Spacing between letters */
+  text-align: center; /* Center text alignment */
 }
 
-.home-about-me .button{
+/* Styles for the button container */
+.home-about-me .button {
   position: relative;
-  z-index: 1;
+  z-index: 1; /* Stack order */
 }
 
-.home-about-me .button-56{
-  background-color: #f2e2d0;
+/* Styles for button 56 */
+.home-about-me .button-56 {
+  background-color: #f2e2d0; /* Button background color */
 }
 
-.home-about-me .button-56::after{
-  background-color: #4682b4;
+/* Styles for the button's after element */
+.home-about-me .button-56::after {
+  background-color: #4682b4; /* After element background color */
 }
 
-.home-about-me .button-56:hover{
-  background-color: #4682b4;
-  color: #f2e2d0;
+/* Button hover effect */
+.home-about-me .button-56:hover {
+  background-color: #4682b4; /* Button hover background color */
+  color: #f2e2d0; /* Button hover text color */
 }
 
 /* Media Query for Tablets (768px) */
 @media (max-width: 768px) {
   .home-about-me h2 {
-    font-size: 40px;
+    font-size: 40px; /* Smaller heading font size for tablets */
   }
   .home-about-me p {
     width: 80%; /* Increase width for better readability on smaller screens */
-    font-size: 16px;
+    font-size: 16px; /* Font size for paragraphs */
   }
   .home-about-me {
     padding: 16px; /* Adjust padding for smaller screens */
@@ -61,18 +86,18 @@
 /* Media Query for Mobile (500px) */
 @media (max-width: 500px) {
   .home-about-me h2 {
-    font-size: 32px; /* Smaller heading for mobile */
+    font-size: 32px; /* Smaller heading font size for mobile */
   }
   .home-about-me p {
     width: 90%; /* Full width on smaller devices */
     font-size: 12px; /* Smaller font for mobile */
-    letter-spacing: 1;
+    letter-spacing: 1; /* Letter spacing for mobile */
   }
   .home-about-me {
     padding: 12px; /* Smaller padding for compact layout */
   }
   .home-about-me .button-56 {
     padding: 8px 16px; /* Adjust button padding for mobile */
-    font-size: 14px;
+    font-size: 14px; /* Font size for buttons */
   }
 }

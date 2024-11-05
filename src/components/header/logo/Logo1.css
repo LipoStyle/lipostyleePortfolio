@@ -1,0 +1,12 @@
+.logo h1{
+  font-family: "Rubik Glitch", system-ui;
+  color: #ff6347;
+  font-weight: normal;
+  font-size: 42px;
+  letter-spacing: 4px;
+  transition: all .6s ease-in-out;
+}
+.logo h1:hover{
+  color: antiquewhite;
+  letter-spacing: 8px;
+}

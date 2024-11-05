@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import profilePic from '../../images/homeimages/background-hero.png'; // Ensure your import is at the top
+import profilePic from '../../images/homeimages/background-hero.webp'; // Ensure your import is at the top
 import SkillsAndTechnologies from './SkillsAndTechnologies';
 
 const About = () => {

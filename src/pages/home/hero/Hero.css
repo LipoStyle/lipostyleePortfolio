@@ -34,6 +34,23 @@
   gap: 24px;
 }
 
+.title-job-me {
+  padding: 0px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-of-me {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 27px;
+}
+
 .hero-content h1 {
   color: #f2e2d0;
   font-size: 60px;
@@ -45,11 +62,28 @@
   font-size: 24px;
 }
 
+.image-of-me {
+  padding: 20px;
+  padding-bottom: 0;
+  background-color: rgba(130, 167, 198, 0.322); /* Subtle transparent background */
+  border-radius: 24px;
+  width: 30%;
+  border-top: 4px solid #ebbd32; /* Gold accent border */
+  border-bottom: 4px solid #ebbd32; /* Gold accent border */
+  transition: all .6s ease-in-out;
+}
+
+.image-of-me:hover {
+  border-top: 4px solid #ffd700; /* Gold accent border */
+  border-bottom: 4px solid #ffd700; /* Gold accent border */
+  filter: brightness(1.2); 
+}
+
 /* Enhanced styling for the quote */
 .hero-content .quote {
   margin: 0 auto;
   padding: 20px 30px;
-  max-width: 70%;
+  width: 70%;
   color: #f2e2d0;
   background-color: rgba(130, 167, 198, 0.322); /* Subtle transparent background */
   font-style: italic;
@@ -69,91 +103,108 @@
 
 /* CTA Buttons */
 .hero-cta-buttons {
-  margin: 30px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   justify-content: center;
-  align-items: center;
   gap: 24px;
 }
-
-.hero-cta-buttons .button-56:nth-child(1),
-.hero-cta-buttons .button-56:nth-child(2) {
-  width: fit-content;
+.hero-buttons-above-900{
+  display: none;
 }
+/* Media Queries */
 
-.hero-cta-buttons .button-56:nth-child(3) {
-  grid-column: span 2;
-  width: 80%;
-  justify-self: center;
-}
-
-/* Media Query for Large Screens (1200px and below) */
-@media (max-width: 1200px) {
+/* For laptops (1024px and below) */
+@media (max-width: 1024px) {
   .hero-content h1 {
-    font-size: 52px;
+    font-size: 48px; /* Decrease the font size */
   }
-
-  .hero-content .quote {
-    font-size: 22px;
-    max-width: 75%;
-    padding: 18px 25px;
-  }
-
-  .hero-cta-buttons {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-/* Media Query for Tablets (768px and below) */
-@media (max-width: 768px) {
-  .hero {
-    height: 70vh;
-  }
-
-  .hero-content h1 {
-    font-size: 48px;
-  }
-
-  .hero-content .quote {
-    font-size: 20px;
-    padding: 15px 20px;
-    max-width: 85%;
-  }
-
+  
   .hero-content .hero-profession {
-    font-size: 20px;
+    font-size: 20px; /* Decrease the font size */
   }
-
-  .hero-cta-buttons {
-    grid-template-columns: 1fr 1fr;
+  
+  .text-of-me {
+    width: 80%; /* Increase width for better readability */
+  }
+  
+  .image-of-me {
+    width: 40%; /* Increase width for better balance */
   }
 }
-
-/* Media Query for Mobile (500px and below) */
-@media (max-width: 500px) {
-  .hero {
-    height: 60vh;
+@media (max-width: 900px) {
+  .hero{
+    height: 140vh;
   }
-
-  .hero-content h1 {
-    font-size: 36px;
+  .hero-buttons-bellow-900{
+    display: none;
   }
+  .hero-buttons-above-900{
+    display: grid;
 
-  .hero-profession {
-    font-size: 18px;
+    grid-template-columns: 1fr 1fr ;
   }
+  .hero-buttons-above-900 a:nth-child(3){
+    grid-column: span 2;
+  }
+  .title-job-me{
+    flex-direction: column;
+    gap: 12px;
 
-  .hero-content .quote {
-    font-size: 18px;
-    padding: 12px 15px;
-    max-width: 90%;
-    border-radius: 5px;
+    padding: 0;
+  }
+  .text-of-me{
+    padding: 20px;
+    width: 100%;
+  }
+  .text-of-me .quote{
+    padding: 12px 30px;
+    width: 80%;
     text-align: center;
   }
+}
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+  .hero{
+    height: 120vh;
+  }
+  .hero-content h1 {
+    font-size: 36px; /* Smaller font size */
+  }
+  
+  .hero-content .hero-profession {
+    font-size: 18px; /* Smaller font size */
+  }
+  .text-of-me .quote{
+    font-size: 18px;
+  }
+}
 
-  .hero-cta-buttons {
-    grid-template-columns: 1fr; /* Stack buttons vertically on mobile */
-    gap: 16px;
+/* For mobile (500px and below) */
+@media (max-width: 500px) {
+
+  .hero-content h1 {
+    font-size: 28px; /* Smaller font size for mobile */
+  }
+  .text-of-me .quote{
+    margin: 0 auto;
+    width: 100%;
+    font-size: 15px;
+  }
+  .hero-content .hero-profession {
+    font-size: 16px; /* Smaller font size */
+  }
+  
+  .text-of-me {
+    gap: 18px;
+    width: 95%; /* Full width for better readability */
+  }
+  .image-of-me{
+    width: 65%;
+  }
+  .hero {
+    height: 115vh; /* Adjust height for mobile screens */
+  }
+  .hero-cta-buttons a{
+    padding: 3px 6px;
+    font-size: 15px;
   }
 }
