@@ -10,11 +10,14 @@ const HomeAboutMe = () => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible((prev) => ({ ...prev, [entry.target.dataset.type]: true }));
-          observer.unobserve(entry.target); // Stop observing once it becomes visible
-        }
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const elementType = entry.target.dataset.type;
+            setIsVisible((prev) => ({ ...prev, [elementType]: true }));
+            observer.unobserve(entry.target); // Stop observing once it's visible
+          }
+        });
       },
       { threshold: 0.1 } // Adjust threshold as needed
     );
@@ -48,14 +51,8 @@ const HomeAboutMe = () => {
       >
         A self-taught full-stack web developer with a passion for creating dynamic and impactful web solutions. From customizing files as a teenager to building web applications today, I’ve combined years of curiosity, learning, and hands-on experience to become the developer I am today. Let's create something amazing together!
       </p>
-      <div className="button">
-        <Button
-          to="about"
-          name="Learn More"
-          className={isVisible.button ? 'fade-in' : ''}
-          ref={buttonRef}
-          data-type="button"
-        />
+      <div className={`button ${isVisible.button ? 'fade-in' : ''}`} ref={buttonRef} data-type="button">
+        <Button to="about" name="Learn More" />
       </div>
     </section>
   );

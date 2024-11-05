@@ -131,9 +131,6 @@
   }
 }
 @media (max-width: 900px) {
-  .hero{
-    height: 140vh;
-  }
   .hero-buttons-bellow-900{
     display: none;
   }
@@ -179,7 +176,7 @@
 }
 
 /* For mobile (500px and below) */
-@media (max-width: 500px) {
+@media (max-width: 560px) {
 
   .hero-content h1 {
     font-size: 28px; /* Smaller font size for mobile */
@@ -198,7 +195,7 @@
     width: 95%; /* Full width for better readability */
   }
   .image-of-me{
-    width: 65%;
+    width: 60%;
   }
   .hero {
     height: 115vh; /* Adjust height for mobile screens */
@@ -207,4 +204,8 @@
     padding: 3px 6px;
     font-size: 15px;
   }
+}
+
+@media (max-width: 380px) {
+
 }

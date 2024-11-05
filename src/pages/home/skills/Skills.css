@@ -1,3 +1,21 @@
+/* Keyframes for slide-in animation */
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Fade-in class to apply the animation */
+.fade-in {
+  animation: slideIn 2s ease forwards;
+}
+
+/* Styles for the skills section */
 .skills {
   width: 100%;
   padding: 40px 0px;
@@ -24,12 +42,20 @@
   font-size: 18px;
   line-height: 1.6;
 }
-.skills .line{
+
+.skills .line {
   margin: 6px auto 18px auto;
   border: 2px dashed #0f436b;
   border-radius: 12px;
   width: 60%;
 }
+
+.slider-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* Inner skill packs styling */
 .inner-skill-pack {
   display: flex !important;

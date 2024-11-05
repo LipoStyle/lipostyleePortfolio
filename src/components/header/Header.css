@@ -1,9 +1,6 @@
 /* Header styles */
 .header {
   background-color: #0b323a;
-  color: #ebbd32;
-  padding: 15px;
-  padding-bottom: 0px;
   position: sticky;
   top: 0;
   width: 100%;
@@ -12,15 +9,6 @@
   grid-template-columns: 1fr auto 1fr; /* 3-column grid */
   align-items: center; /* Vertically aligns items */
   justify-items: center; /* Center horizontally */
-}
-
-/* Remove underline from logo */
-.logo-link {
-  text-decoration: none; /* Remove underline */
-  grid-column: 2/3; /* Centered in the middle grid column */
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Vertically centered */
 }
 
 /* Regular navigation for large screens */
@@ -49,11 +37,14 @@
   padding: 10px 15px;
   font-size: 18px;
   text-align: center;
-  transition: color 0.3s ease;
+  transition: color 0.6s ease-in-out;
+  font-family: 'Cyberjunkies', sans-serif;
+  font-weight: normal;   
+  letter-spacing: 2px;   
 }
 
 .menu-left ul li a:hover, .menu-right ul li a:hover {
-  color: #32cd32;  /* Lime Green */
+  color: #f2e2d0; 
 }
 
 /* Burger icon for small screens */
@@ -63,13 +54,13 @@
   flex-direction: column;
   gap: 5px;
   z-index: 999; /* Ensure the burger icon stays on top */
-  transition: transform 0.5s ease; /* Smooth animation for the burger */
+  transition: transform 0.6s ease; /* Smooth animation for the burger */
 }
 
 .burger-icon .line {
   width: 25px;
   height: 3px;
-  background-color: #00ced1;
+  background-color: #ff6347;
   transition: all 0.3s ease;
   border-radius: 24px;
 }
@@ -77,7 +68,7 @@
 /* Burger-to-X transformation */
 .burger-icon.open .line:nth-child(1) {
   transform: rotate(45deg) translate(4px, 8px); /* Rotate top line */
-  background-color: #ff6347; /* Change to orange */
+  background-color: #f2e2d0; /* Change to orange */
 }
 
 .burger-icon.open .line:nth-child(2) {
@@ -86,7 +77,7 @@
 
 .burger-icon.open .line:nth-child(3) {
   transform: rotate(-45deg) translate(4px, -8px); /* Rotate bottom line */
-  background-color: #ff6347; /* Change to orange */
+  background-color: #f2e2d0; /* Change to orange */
 }
 
 /* Overlay menu (hidden by default, shown when burger is clicked) */
@@ -122,14 +113,17 @@
 }
 
 .overlay-menu ul li a {
-  font-size: 30px;
+  font-size: 27px;
   color: #ff6347; /* Gold */
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.6s ease;
+  font-family: 'Cyberjunkies', sans-serif;
+  font-weight: normal;   
+  letter-spacing: 3px;
 }
 
 .overlay-menu ul li a:hover {
-  color: #32cd32;  /* Lime Green */
+  color: #f2e2d0;  /* Lime Green */
 }
 
 /* Responsive behavior for screens below 900px */
@@ -139,12 +133,14 @@
   }
 
   .burger-icon {
+    margin-right: 20px;
     display: flex;
     grid-column: 3; /* Place burger icon on the right */
     justify-self: end;
   }
 
   .logo-link {
+    margin-left: 20px;
     grid-column: 1; /* Place logo on the left */
     justify-self: start;
   }
