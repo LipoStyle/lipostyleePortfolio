@@ -1,7 +1,5 @@
 /* Header styles */
 .header {
-  padding: 0;
-  margin: 0;
   background-color: #0b323a;
   position: sticky;
   top: 0;
@@ -14,39 +12,71 @@
 }
 
 /* Regular navigation for large screens */
-.menu-left ul, .menu-right ul {
+.menu-left ul,
+.menu-right ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .menu-left {
   grid-column: 1/2; /* Left column for menu */
   grid-row: 1/2;
 }
+
 .menu-right {
   grid-row: 1/2;
   grid-column: 3/4; /* Right column for menu */
 }
 
-.menu-left ul li, .menu-right ul li {
+.menu-left ul li,
+.menu-right ul li {
   margin-left: 20px;
+  position: relative; /* For the sliding bar */
 }
 
-.menu-left ul li a, .menu-right ul li a {
+/* Active link styling and hover effect for the sliding bar */
+.menu-left ul li a,
+.menu-right ul li a {
   color: #ff6347; /* Gold */
   text-decoration: none;
   padding: 10px 15px;
   font-size: 18px;
   text-align: center;
-  transition: color 0.6s ease-in-out;
   font-family: 'Cyberjunkies', sans-serif;
-  font-weight: normal;   
-  letter-spacing: 2px;   
+  font-weight: normal;
+  letter-spacing: 2px;
+  position: relative; /* Needed for the sliding bar */
+  transition: all .6s ease-in-out;
+}
+.menu-left ul li a:hover,
+.menu-right ul li a:hover{
+  color: #f2e2d0;
+}
+.menu-left ul li a::after,
+.menu-right ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Bar placed just below the link */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff6347; /* Same as link color */
+  transition: all 0.6s ease-in-out; /* Smooth sliding animation */
 }
 
-.menu-left ul li a:hover, .menu-right ul li a:hover {
-  color: #f2e2d0; 
+/* Hover effect for the sliding bar */
+.menu-left ul li a:hover::after,
+.menu-right ul li a:hover::after {
+  background-color: #f2e2d0;
+  width: 100%; /* Expands to full width on hover */
+}
+
+/* Active state (for the current page) */
+.menu-left ul li a.active::after,
+.menu-right ul li a.active::after {
+  width: 100%; /* Full width for the active page */
 }
 
 /* Burger icon for small screens */
@@ -81,14 +111,13 @@
   transform: rotate(-45deg) translate(4px, -8px); /* Rotate bottom line */
   background-color: #f2e2d0; /* Change to orange */
 }
-
 /* Overlay menu (hidden by default, shown when burger is clicked) */
 .overlay-menu {
   position: fixed;
   top: 0;
-  right: 0;
-  width: 0;
-  height: 0;
+  right: -100px;
+  width: 0; /* Initially hidden with 0 width */
+  height: 100vh;
   overflow: hidden;
   background: #0b323aa8;
   backdrop-filter: blur(10px);
@@ -96,41 +125,65 @@
   justify-content: center;
   align-items: center;
   z-index: 200;
-  transition: all 0.5s ease;
-
+  transition: width 0.5s ease-in-out; /* Smooth transition for width */
 }
 
 .overlay-menu.open {
-  width: 100vw;
-  height: 100vh;
+  width: 300px; /* Set to 200px when open */
 }
 
 .overlay-menu ul {
+  padding: 15px;
   list-style: none;
-  text-align: center;
+  text-align: left;
+  width: 100%; /* Take full width of overlay */
 }
 
 .overlay-menu ul li {
   margin: 20px 0;
+  position: relative; /* For the sliding bar */
 }
 
+/* Active link styling and hover effect for the sliding bar in overlay menu */
 .overlay-menu ul li a {
   font-size: 27px;
   color: #ff6347; /* Gold */
   text-decoration: none;
-  transition: color 0.6s ease;
+  transition: color 0.6s ease-in-out;
   font-family: 'Cyberjunkies', sans-serif;
-  font-weight: normal;   
+  font-weight: normal;
   letter-spacing: 3px;
+  position: relative; /* Needed for the sliding bar */
+}
+.overlay-menu ul li a:hover{
+  color: #f2e2d0;
+}
+.overlay-menu ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Bar placed just below the link */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ff6347; /* Same as link color */
+  transition: all 0.6s ease-in-out; /* Smooth sliding animation */
 }
 
-.overlay-menu ul li a:hover {
-  color: #f2e2d0;  /* Lime Green */
+/* Hover effect for the sliding bar in overlay menu */
+.overlay-menu ul li a:hover::after {
+  background-color: #f2e2d0;
+  width: 100%; /* Expands to full width on hover */
+}
+
+/* Active state for overlay menu items */
+.overlay-menu ul li a.active::after {
+  width: 100%; /* Full width for the active page */
 }
 
 /* Responsive behavior for screens below 900px */
 @media (max-width: 900px) {
-  .menu-left, .menu-right {
+  .menu-left,
+  .menu-right {
     display: none; /* Hide regular menu */
   }
 

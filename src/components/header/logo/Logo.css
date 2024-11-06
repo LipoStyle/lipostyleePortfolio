@@ -2,12 +2,12 @@
 
 .logo{
   background-image: url(../../../images/logo/logo.svg);
-  background-size: cover;
-
-  width: 120px;
-  height: 120px;
-
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   transition: all .6s ease-in-out;
+  width: 120px;
+  height: 90px;
 }
 
 .logo:hover{
