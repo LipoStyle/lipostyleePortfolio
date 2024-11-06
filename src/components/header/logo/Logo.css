@@ -13,3 +13,72 @@
 .logo:hover{
   background-image: url(../../../images/logo/logo-hover.svg);
 }
+
+/* 
+
+.l {
+  color: #ff6347; /* Tomato 
+  /* font-family: 'Arial', sans-serif; 
+  transform: rotate(-10deg);
+}
+
+.i {
+  color: #32cd32;  /* Lime Green 
+  /* font-family: 'Georgia', serif; 
+  transform: skewY(-10deg);
+}
+
+.p {
+  color: #1e90ff; /* Dodger Blue 
+  /* font-family: 'Verdana', sans-serif; 
+  transform: rotate(5deg);
+}
+
+.o {
+  color: #ff1493; /* Deep Pink 
+  /* font-family: 'Courier New', monospace; 
+  transform: rotate(-5deg);
+}
+
+.s {
+  color: #ffd700; /* Gold 
+  /* font-family: 'Lucida Console', monospace; 
+  transform: scale(1.2);
+}
+
+.t {
+  color: #8a2be2; /* BlueViolet 
+  /* font-family: 'Comic Sans MS', cursive; 
+  transform: skewX(10deg);
+}
+
+.y {
+  color: #ff4500; /* OrangeRed 
+  /* font-family: 'Times New Roman', serif; 
+  transform: rotate(-15deg);
+}
+
+.l-2 {
+  color: #4682b4; /* SteelBlue 
+  /* font-family: 'Tahoma', sans-serif; 
+  transform: rotate(10deg);
+}
+
+.e {
+  color: #00ced1; /* DarkTurquoise 
+  /* font-family: 'Impact', sans-serif; 
+  transform: scale(1.1);
+}
+
+.e-2 {
+  color: #ff6347; /* Tomato 
+  /* font-family: 'Arial', sans-serif; 
+  transform: rotate(-7deg);
+}
+
+/* Hover effect for all letters 
+.letter:hover {
+  transform: scale(1.3) rotate(360deg); /* Playful scaling and rotation
+}
+
+*/

@@ -1,7 +1,7 @@
 /* Hero section */
 .hero {
+  padding: 60px;
   width: 100%;
-  height: 80vh;
   background-image: url(../../../images/homeimages/background-hero.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,8 +25,6 @@
   position: relative;
   z-index: 2;
   text-align: center;
-  top: 50%;
-  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,7 +33,6 @@
 }
 
 .title-job-me {
-  padding: 0px 20px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -68,12 +65,6 @@
   background-color: rgba(130, 167, 198, 0.322); /* Subtle transparent background */
   border-radius: 24px;
   width: 30%;
-  border-top: 4px solid #ebbd32; /* Gold accent border */
-  border-bottom: 4px solid #ebbd32; /* Gold accent border */
-  transition: all .6s ease-in-out;
-}
-
-.image-of-me:hover {
   border-top: 4px solid #ffd700; /* Gold accent border */
   border-bottom: 4px solid #ffd700; /* Gold accent border */
   filter: brightness(1.2); 
@@ -83,7 +74,6 @@
 .hero-content .quote {
   margin: 0 auto;
   padding: 20px 30px;
-  width: 70%;
   color: #f2e2d0;
   background-color: rgba(130, 167, 198, 0.322); /* Subtle transparent background */
   font-style: italic;
@@ -114,6 +104,9 @@
 
 /* For laptops (1024px and below) */
 @media (max-width: 1024px) {
+  .hero{
+    padding: 15px;
+  }
   .hero-content h1 {
     font-size: 48px; /* Decrease the font size */
   }
@@ -121,9 +114,11 @@
   .hero-content .hero-profession {
     font-size: 20px; /* Decrease the font size */
   }
-  
-  .text-of-me {
-    width: 80%; /* Increase width for better readability */
+  .title-job-me{
+    gap: 24px;
+  }
+  .text-of-me{
+    gap: 24px;
   }
   
   .image-of-me {
@@ -160,9 +155,6 @@
 }
 /* For tablets (768px and below) */
 @media (max-width: 768px) {
-  .hero{
-    height: 120vh;
-  }
   .hero-content h1 {
     font-size: 36px; /* Smaller font size */
   }
@@ -172,6 +164,9 @@
   }
   .text-of-me .quote{
     font-size: 18px;
+  }
+  .image-of-me{
+    width: 60%;
   }
 }
 
@@ -194,18 +189,9 @@
     gap: 18px;
     width: 95%; /* Full width for better readability */
   }
-  .image-of-me{
-    width: 60%;
-  }
-  .hero {
-    height: 115vh; /* Adjust height for mobile screens */
-  }
+  
   .hero-cta-buttons a{
     padding: 3px 6px;
-    font-size: 15px;
+    font-size: 14px;
   }
-}
-
-@media (max-width: 380px) {
-
 }

@@ -53,9 +53,12 @@
 
 /* Styles for button 56 */
 .home-about-me .button-56 {
-  background-color: #f2e2d0;
+  background-color: #82a7c6;
 }
-
+.home-about-me .button-56:hover {
+  background-color: #f2e2d0;
+;
+}
 /* Media Query for Tablets (768px) */
 @media (max-width: 768px) {
   .home-about-me h2 {

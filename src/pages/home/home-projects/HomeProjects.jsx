@@ -1,4 +1,3 @@
-// HomeProjects.js
 import "./HomeProjects.css";
 import Button from "../../../components/button/Button";
 import eNutritionist from "../../../images/homeimages/projectimages/e-nutritionist.png";
@@ -10,7 +9,7 @@ const HomeProjects = () => {
       <h2>Featured Projects</h2>
       <div className="featured-projects">
         <div className="project-card">
-          <img src={eNutritionist} alt="E-Nutritionst site" className="project-image" />
+          <img src={eNutritionist} alt="E-Nutritionist site" className="project-image" />
           <div className="project-overlay">
             <h3>E-Nutritionist.com</h3>
             <p>Professional site for nutritionists to manage clients and resources.</p>
