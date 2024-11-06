@@ -17,7 +17,7 @@
 
 /* Styles for the home-about-me section */
 .home-about-me {
-  padding: 24px;
+  padding: 40px 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,7 +79,7 @@
 /* Media Query for Mobile (500px) */
 @media (max-width: 500px) {
   .home-about-me h2 {
-    font-size: 32px;
+    font-size: 33px;
   }
   .home-about-me p {
     width: 90%;

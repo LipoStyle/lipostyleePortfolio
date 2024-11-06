@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.5ffd8c5b.css",
-    "main.js": "/static/js/main.ff00fdfb.js",
+    "main.css": "/static/css/main.a74cbb0c.css",
+    "main.js": "/static/js/main.1e008098.js",
     "static/js/453.f3841e31.chunk.js": "/static/js/453.f3841e31.chunk.js",
     "static/media/background-hero.webp": "/static/media/background-hero.ddd824fea3b268c32032.webp",
+    "static/media/logo-hover.svg": "/static/media/logo-hover.5222c46a085167737078.svg",
+    "static/media/logo.svg": "/static/media/logo.8148062dfab82d391c08.svg",
     "static/media/background-hero.png": "/static/media/background-hero.27a0286d63e6d30d18d4.png",
     "static/media/me.png": "/static/media/me.780d5356885202e680f7.png",
     "static/media/smart-ride.png": "/static/media/smart-ride.285556ffad7f9ba4915d.png",
@@ -21,12 +23,12 @@
     "static/media/javascript.svg": "/static/media/javascript.c2d463fde72a01350f2e8cdd7797b7ba.svg",
     "static/media/css.svg": "/static/media/css.60e23942f41d4dc73de0d271b4453605.svg",
     "static/media/html.svg": "/static/media/html.bfc29cc664956a7748f9ee78fa82ec7b.svg",
-    "main.5ffd8c5b.css.map": "/static/css/main.5ffd8c5b.css.map",
-    "main.ff00fdfb.js.map": "/static/js/main.ff00fdfb.js.map",
+    "main.a74cbb0c.css.map": "/static/css/main.a74cbb0c.css.map",
+    "main.1e008098.js.map": "/static/js/main.1e008098.js.map",
     "453.f3841e31.chunk.js.map": "/static/js/453.f3841e31.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ffd8c5b.css",
-    "static/js/main.ff00fdfb.js"
+    "static/css/main.a74cbb0c.css",
+    "static/js/main.1e008098.js"
   ]
 }

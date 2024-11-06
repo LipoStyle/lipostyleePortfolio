@@ -37,6 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 12px;
 }
 
 .text-of-me {
@@ -172,9 +173,11 @@
 
 /* For mobile (500px and below) */
 @media (max-width: 560px) {
-
+  .hero{
+    padding: 0px 0px 20px 0px;
+  }
   .hero-content h1 {
-    font-size: 28px; /* Smaller font size for mobile */
+    font-size: 33px; /* Smaller font size for mobile */
   }
   .text-of-me .quote{
     margin: 0 auto;
@@ -187,9 +190,10 @@
   
   .text-of-me {
     gap: 18px;
-    width: 95%; /* Full width for better readability */
   }
-  
+  .image-of-me{
+    width: 75%;
+  }
   .hero-cta-buttons a{
     padding: 3px 6px;
     font-size: 14px;

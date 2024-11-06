@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="title-job-me">
           <div className="text-of-me">
             <h1>Hi, I'm Manuel Lipo</h1>
-            <h2 className="hero-profession">Full-Stack Developer</h2>
+            <h3 className="hero-profession">Full-Stack Developer</h3>
             {/* Typing effect applied to the quote */}
             <p className="quote">{typedQuote}</p>
             <div className="hero-cta-buttons hero-buttons-bellow-900">

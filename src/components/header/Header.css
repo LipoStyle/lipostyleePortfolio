@@ -1,5 +1,7 @@
 /* Header styles */
 .header {
+  padding: 0;
+  margin: 0;
   background-color: #0b323a;
   position: sticky;
   top: 0;
