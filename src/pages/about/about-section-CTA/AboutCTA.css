@@ -1,0 +1,12 @@
+/* Styles for the button container */
+.about-container .button {
+  position: relative;
+  z-index: 1;
+}
+/* Styles for button 56 */
+.about-container .button-56{
+  background-color: #82a7c6;
+}
+.about-container .button-56:hover {
+  background-color: #f2e2d0;
+}

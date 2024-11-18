@@ -1,0 +1,41 @@
+.about-section-profile{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+/* title styling */
+.about-section-profile h2{
+  font-size: 5rem;
+}
+
+/* my-jurney */
+.my-jurney{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.my-jurney div{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+}
+/* a change of flex-direction onnly for the second div */
+.my-jurney div:nth-child(2){
+  flex-direction: row;
+}
+.my-jurney div .text-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  max-width: 840px;
+}
