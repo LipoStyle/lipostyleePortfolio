@@ -1,79 +1,54 @@
-# ============================
-# 📦 Node + React
-# ============================
-
-# Dependency folders
+# ✅ Node modules and logs
 node_modules/
-.cache/
-
-# Production build
-build/
-dist/
-
-# Vite cache (if using Vite)
-.vite/
-
-# Webpack cache (if manually configured)
-webpack-stats.json
-
-# ============================
-# ⚙️ Logs and Temp Files
-# ============================
-
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# Editor backup files
-*.swp
-*.bak
-*.tmp
+# ✅ Dependency directories and cache
+.cache/
+.next/
+dist/
+build/
+tmp/
+temp/
 
-# ============================
-# 🖥️ System Files
-# ============================
-
+# ✅ OS-generated files
 .DS_Store
 Thumbs.db
 
-# ============================
-# 🔒 Env and config secrets
-# ============================
-
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# ============================
-# 💾 IDEs and Editors
-# ============================
-
-# VS Code
+# ✅ Editor-specific (VS Code, JetBrains, etc.)
 .vscode/
-
-# JetBrains IDEs (WebStorm, etc.)
 .idea/
 
-# Mac files
-.AppleDouble
-.LSOverride
-Icon?
+# ✅ Testing
+coverage/
+jest/
+*.lcov
 
-# Windows files
-desktop.ini
+# ✅ Environment variables and keys
+.env
+.env.*.local
+.env.local
 
-# ============================
-# 💡 Optional
-# ============================
+# ✅ Git-specific
+*.swp
+*.swo
+*.orig
+*.rej
+*.patch
 
-# Ignore testing snapshots
-__snapshots__/
+# ✅ Optional: Lock files (if you don’t want to commit them)
+# yarn.lock
+# package-lock.json
+# pnpm-lock.yaml
 
-# Storybook
-.storybook-out/
+# ✅ Cache for development tools
+*.tgz
+*.log
+*.bak
+*.tmp
+*.tsbuildinfo
 
-# Git LFS placeholders (optional)
-*.lfs
+# ✅ Mac M1 system files
+._*
