@@ -1,33 +1,75 @@
+.contact-info {
+  padding: 20px;
+  background-color: #f2e2d033;
+  border-radius: 24px;
+  border-left: 4px solid #ff6347;
+  border-right: 4px solid #ff6347;
+  filter: brightness(1.2);
+  text-align: center;
+}
+
 .contact-info h2 {
-  font-size: 1.4rem;
-  color: #fff;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #f2e2d0;
+  margin-bottom: 1.8rem;
+}
+.contact-info .contact-subtext {
+  color: #f2e2d0;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
 }
 
 .contact-info ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-  color: #fff;
+  margin: 0 auto;
+  color: #f2e2d0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-items: center;
 }
 
 .contact-info li {
-  margin-bottom: 15px;
   font-size: 1.2rem;
   display: flex;
   align-items: center;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  padding: 0px 42px;
 }
 
 .contact-info li i {
-  margin-right: 10px;
-  color: #3498db;
+  font-size: 2rem;
+  background-color: #ff6347;
+  padding: 8px 16px;
+  border-radius: 24px;
+  color: #f2e2d0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  
 }
 
 .contact-info a {
-  color: #3498db;
+  color: #ff6347;
   text-decoration: none;
+  transition: color 0.3s ease;
+
+ 
 }
 
-.contact-info a:hover {
-  text-decoration: underline;
+.contact-info li:hover a {
+  color: #f2e2d0;
+}
+
+.contact-info li:hover i {
+  background-color: #f2e2d0;
+  color: #ff6347;
 }

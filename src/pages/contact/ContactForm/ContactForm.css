@@ -1,5 +1,5 @@
 .contact-page .contact-form {
-  background: rgba(255, 99, 71, 0.537); /* semi-transparent glass */
+  background: #ff634789; /* semi-transparent glass */
   backdrop-filter: blur(10px); /* frosted glass blur */
   -webkit-backdrop-filter: blur(10px); /* Safari support */
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -8,7 +8,23 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease, border 0.3s ease;
 }
+.contact-form h2 {
+  font-size: 1.8rem;
+  color: #f2e2d0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
+.form-subtext {
+  color: #f2e2d0;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.5;
+}
 .contact-page .contact-form form {
   display: flex;
   flex-direction: column;
@@ -41,7 +57,7 @@
 }
 
 .contact-page .button-56 {
-
+  margin: 0 auto;
 }
 
 .contact-page .button-56:hover {
