@@ -1,0 +1,16 @@
+/* src/pages/portfolio/PortfolioPage.css */
+.portfolio-page {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 100vh;
+}
+
+.portfolio-layout {
+  display: flex;
+  align-items: flex-start;
+  height: auto;
+  min-height: calc(100vh - 140px); /* full height minus header/footer */
+  overflow: visible;
+  background-color: #f2e2d0;
+}
