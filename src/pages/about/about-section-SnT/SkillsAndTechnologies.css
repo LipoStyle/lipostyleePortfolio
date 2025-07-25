@@ -9,7 +9,7 @@
   margin-bottom: 30px;
 }
 
-.skills-technologies-wrapper {
+.skills-section .skills-technologies-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -18,8 +18,8 @@
   gap: 40px; /* Spacing between columns */
 }
 
-.skills-column,
-.technologies-column {
+.skills-section .skills-column,
+.skills-section .technologies-column {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -28,11 +28,12 @@
   gap: 16px;
 }
 
-.column-title {
+.skills-section .column-title {
   font-size: 28px;
   margin-bottom: 20px;
 }
-.column-data{
+
+.skills-section .column-data {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -40,8 +41,9 @@
   align-items: flex-start;
   gap: 24px;
 }
-.skill-item,
-.tech-item {
+
+.skills-section .skill-item,
+.skills-section .tech-item {
   width: 100%;
   background-color: #f2e2d0;
   color: inherit;
@@ -50,56 +52,55 @@
   padding: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.skill-item:hover,
-.tech-item:hover {
+.skills-section .skill-item:hover,
+.skills-section .tech-item:hover {
   background-color: #82a7c6;
   color: #f2e2d0;
 }
 
-.skill-title,
-.tech-title {
+.skills-section .skill-title,
+.skills-section .tech-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.skill-title h4,
-.tech-title h4 {
+.skills-section .skill-title h4,
+.skills-section .tech-title h4 {
   font-size: 22px;
   margin: 0;
   text-align: center;
 }
 
-.arrow {
+.skills-section .arrow {
   font-size: 24px;
   transition: transform 0.3s ease;
 }
 
-.arrow.rotate {
+.skills-section .arrow.rotate {
   transform: rotate(90deg);
 }
 
-.skill-description,
-.tech-description {
+.skills-section .skill-description,
+.skills-section .tech-description {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.4s ease;
 }
 
-.skill-description.open,
-.tech-description.open {
+.skills-section .skill-description.open,
+.skills-section .tech-description.open {
   max-height: 200px;
   padding-top: 10px;
 }
 
-.skill-description p,
-.tech-description p {
+.skills-section .skill-description p,
+.skills-section .tech-description p {
   margin: 0;
   color: #333;
   font-size: 16px;
@@ -107,30 +108,28 @@
   text-align: start;
 }
 
-
 /* Responsive Design */
-
 @media (max-width: 1200px) {
   .skills-section h2 {
     font-size: 32px;
   }
 
-  .skills-technologies-wrapper {
+  .skills-section .skills-technologies-wrapper {
     gap: 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .skills-technologies-wrapper {
+  .skills-section .skills-technologies-wrapper {
     flex-direction: column; /* Stack columns vertically */
   }
 
-  .skills-column,
-  .technologies-column {
+  .skills-section .skills-column,
+  .skills-section .technologies-column {
     width: 100%; /* Full width on smaller screens */
   }
-  
-  .column-title {
+
+  .skills-section .column-title {
     font-size: 24px;
   }
 }
@@ -140,13 +139,13 @@
     font-size: 24px;
   }
 
-  .skill-title h4,
-  .tech-title h4 {
+  .skills-section .skill-title h4,
+  .skills-section .tech-title h4 {
     font-size: 18px;
   }
 
-  .skill-description p,
-  .tech-description p {
+  .skills-section .skill-description p,
+  .skills-section .tech-description p {
     font-size: 14px;
   }
 }

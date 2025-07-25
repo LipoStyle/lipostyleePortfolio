@@ -22,6 +22,7 @@ const Sidebar = ({ selected, onSelect }) => {
 
   return (
     <aside className="sidebar">
+      
       <h3 className="sidebar-title">My Projects</h3>
       <ul className="sidebar-list" ref={listRef}>
         <div

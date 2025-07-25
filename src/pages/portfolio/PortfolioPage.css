@@ -1,16 +1,43 @@
-/* src/pages/portfolio/PortfolioPage.css */
 .portfolio-page {
   display: flex;
   flex-direction: column;
-  gap: 12px;
   min-height: 100vh;
+  background-color: #f2e2d0;
 }
+
+.project-selector-mobile {
+  display: none;
+  padding: .6rem;
+
+  background-color: #ff6347;
+}
+  .project-selector-mobile h2{
+    color: #f2e2d0;
+  }
+
+
 
 .portfolio-layout {
   display: flex;
   align-items: flex-start;
-  height: auto;
-  min-height: calc(100vh - 140px); /* full height minus header/footer */
-  overflow: visible;
-  background-color: #f2e2d0;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .portfolio-layout {
+    flex-direction: column;
+  }
+
+  .project-selector-mobile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 24px;
+  }
+.project-selector-mobile h2{
+  font-size: 18px;
+}
+  .sidebar {
+    display: none;
+  }
 }
