@@ -90,7 +90,11 @@ const projects = [
       }
     ],
 
-    // Improved Tech Stack
+    // Paragraph for Tech Stack Section
+    techStackIntro:
+      "Below are the core technologies used to build this project, carefully chosen for scalability, maintainability, and a smooth user experience.",
+
+    // Improved Tech Stack (array of objects)
     techStack: [
       {
         icon: '⚛️',
@@ -123,6 +127,10 @@ const projects = [
         note: 'Live Hosting'
       }
     ],
+
+    // Paragraph for Key Highlights Section
+    featuresIntro:
+      "Here are some standout aspects of this project that showcase its design principles, technical approach, and user‑focused experience.",
 
     // Key Highlights
     features: [

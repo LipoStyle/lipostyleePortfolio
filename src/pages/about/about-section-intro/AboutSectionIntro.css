@@ -1,0 +1,110 @@
+.about-section-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+/* Image */
+.profile-pic {
+  width: 520px;
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+/* Text Section */
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.text-section h1 {
+  font-size: 6rem;
+  opacity: 0;
+  transform: translateX(50px);
+  transition: transform 0.8s ease 0.2s, opacity 0.8s ease 0.2s;
+}
+
+.text-section p {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.8s ease 0.4s, opacity 0.8s ease 0.4s;
+}
+
+/* Animated State (triggered by hook) */
+.about-section-intro.animate .profile-pic {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-section-intro.animate .text-section h1 {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-section-intro.animate .text-section p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design for 1200px */
+@media (max-width: 1200px) {
+  .profile-pic {
+    width: 320px;
+  }
+
+  .text-section {
+    align-items: center;
+    gap: 40px;
+  }
+
+  .text-section h1 {
+    font-size: 4.2rem;
+    text-align: center;
+  }
+
+  .text-section p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+/* Responsive Design for 900px */
+@media (max-width: 900px) {
+  .about-section-intro {
+    flex-direction: column-reverse;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+}
+
+/* Responsive Design for 500px */
+@media (max-width: 500px) {
+  .about-section-intro {
+    gap: 21px;
+  }
+
+  .profile-pic {
+    width: 240px;
+  }
+
+  .text-section {
+    gap: 21px;
+  }
+
+  .text-section h1 {
+    font-size: 3rem;
+  }
+
+  .text-section p {
+    font-size: 0.8rem;
+  }
+}

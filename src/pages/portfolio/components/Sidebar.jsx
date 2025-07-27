@@ -16,7 +16,7 @@ const Sidebar = ({ selected, onSelect }) => {
 
     if (activeItem) {
       const { offsetTop, offsetHeight } = activeItem;
-      setIndicatorStyle({ top: offsetTop, height: offsetHeight });
+      setIndicatorStyle({ top: offsetTop, height: offsetHeight});
     }
   }, [selected]);
 
@@ -28,8 +28,8 @@ const Sidebar = ({ selected, onSelect }) => {
         <div
           className="sidebar-active-indicator"
           style={{
-            top: `${indicatorStyle.top}px`,
-            height: `${indicatorStyle.height}px`,
+            top: `${indicatorStyle.top -5}px`,
+            height: `${indicatorStyle.height + 10}px`,
           }}
         />
         {projects.map((project) => (

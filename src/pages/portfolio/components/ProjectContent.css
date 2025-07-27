@@ -5,21 +5,42 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   max-width: 100%;
   animation: fadeIn 0.4s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
 }
 
 /* ===== Titles & Description ===== */
 .project-title {
   padding: 24px;
-  font-size: 2.4rem;
+  font-size: 2.7rem;
   font-weight: 700;
   color: #f2e2d0;
   text-align: center;
+}
+/* ===== Project Image ===== */
+.project-image {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 .project-description {
   padding: 12px;
   font-size: 1.1rem;
-  color: #3c3226;
+  color: #f2e2d0;
   line-height: 1.7;
   margin-bottom: 2rem;
   text-align: center;
@@ -27,17 +48,16 @@
 
 /* ===== Purpose Section ===== */
 .project-purpose {
-  background: #f2e2d057;
-  padding: 1.2rem 1.5rem;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-  color: #3c3226;
-
+  width: 90%;
+  margin: 0 auto;
+  background: #ffffff26;
+  border-radius: 12px;
+  color: #f2e2d0;
+  padding: 12px 24px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 3px;
 }
 
 .project-purpose h3 {
@@ -55,17 +75,19 @@
 
 .project-purpose ul {
   margin: 0.5rem 0 0;
-  padding-left: 1.2rem;
+  padding-left: 1.8rem;
   list-style: disc;
 }
 
 .project-purpose li {
   font-size: 0.95rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.6rem;
 }
 
 /* ===== Pages & Features Section ===== */
 .project-pages-features {
+  width: 90%;
+  margin: 0 auto;
   margin-bottom: 2rem;
 }
 
@@ -77,7 +99,7 @@
 }
 
 .page-section {
-  background: rgba(255, 255, 255, 0.15);
+  background: #ffffff26;
   padding: 1rem;
   border-radius: 8px;
   margin-bottom: 1rem;
@@ -109,7 +131,8 @@
 
 /* ===== Key Highlights ===== */
 .project-features {
-  margin: 2rem 0;
+  width: 90%;
+  margin: 0 auto;
   padding: 0px .25rem;
 }
 
@@ -119,14 +142,25 @@
   color: #f2e2d0;
   text-align: center;
 }
+.features-description {
+  font-size: 1rem;
+  color: #f2e2d0;
+  text-align: center;
+  margin: 0 auto 1.5rem auto;
+  width: 85%;
+  line-height: 1.5;
+}
 
 .project-features ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  gap: 1.2rem;
   padding: 0;
   margin: 0;
   list-style: none;
+
+  /* Important for equal height rows */
+  align-items: stretch; 
 }
 
 .feature-item {
@@ -138,7 +172,11 @@
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease;
+
+  /* Fill the grid row height */
+  height: 100%; 
 }
+
 
 .project-features ul .animate-child:nth-child(odd) .feature-item {
   background-color: #e4523d;
@@ -165,6 +203,21 @@
 }
 
 /* ===== Tech Stack Section ===== */
+.tech-stack-title{
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: #f2e2d0;
+  text-align: center;
+}
+.tech-stack-description {
+  font-size: 1rem;
+  color: #f2e2d0; /* matches your current palette */
+  text-align: center;
+  margin: 0 auto 1.2rem auto;
+  line-height: 1.5;
+  width: 90%;
+}
+
 .tech-stack-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -217,6 +270,14 @@
   gap: 1rem;
   margin-bottom: 2rem;
 }
+.project-links .links-description {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #f2e2d0;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
 
 .project-links a {
   padding: 0.65rem 1.4rem;
@@ -232,23 +293,6 @@
 .project-links a:hover {
   background-color: #e4523d;
   transform: translateY(-2px);
-}
-
-/* ===== Project Image ===== */
-.project-image {
-  width: 100%;
-  margin-top: 1.5rem;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
-
-.project-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  border-radius: 16px;
 }
 
 /* ===== Animations ===== */
@@ -289,9 +333,6 @@
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
-  .project-content {
-    padding: 1.5rem;
-  }
 
   .project-title {
     font-size: 1.6rem;
@@ -303,7 +344,6 @@
   .project-pages-features,
   .project-features {
     font-size: 1rem;
-    text-align: left;
   }
 
   .tech-stack-grid {

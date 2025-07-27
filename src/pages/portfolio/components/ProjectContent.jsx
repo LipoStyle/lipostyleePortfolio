@@ -131,6 +131,12 @@ const ProjectContent = ({ projectId }) => {
         <AnimatedItem delay={600}>
           <div className="project-features">
             <h3>Key Highlights</h3>
+
+            {/* Dynamic Intro Paragraph */}
+            {project.featuresIntro && (
+              <p className="features-description">{project.featuresIntro}</p>
+            )}
+
             <ul>
               {project.features.map((feat, index) => (
                 <AnimatedItem key={index} delay={index * 150}>
@@ -148,11 +154,15 @@ const ProjectContent = ({ projectId }) => {
         </AnimatedItem>
       )}
 
-     {/* Tech Stack Section */}
       {/* Tech Stack Section */}
       <AnimatedItem delay={700}>
         <div className="project-tech-section">
           <h3 className="tech-stack-title">Tech Stack</h3>
+
+          {/* Dynamic Intro Paragraph */}
+          {project.techStackIntro && (
+            <p className="tech-stack-description">{project.techStackIntro}</p>
+          )}
 
           {/* Grid 2 columns */}
           <div className="tech-stack-grid">
@@ -169,6 +179,9 @@ const ProjectContent = ({ projectId }) => {
 
           {/* GitHub & Live Buttons */}
           <div className="project-links">
+            <p className="links-description">
+              Explore the full source code on GitHub or check out the live deployed version of this project below:
+            </p>
             <a href={project.github} target="_blank" rel="noopener noreferrer">
               GitHub
             </a>
