@@ -1,19 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.ee6c84d7.css",
-    "main.js": "/static/js/main.24309cdd.js",
-    "static/js/453.f3841e31.chunk.js": "/static/js/453.f3841e31.chunk.js",
-    "static/media/background-hero.webp": "/static/media/background-hero.ddd824fea3b268c32032.webp",
+    "main.css": "/static/css/main.1242fcb8.css",
+    "main.js": "/static/js/main.3cd504e7.js",
+    "static/media/EnutritionistWebsite.png": "/static/media/EnutritionistWebsite.85c6d4c7aeaf7420c2c1.png",
+    "static/media/e-nutritionist.png": "/static/media/e-nutritionist.85c6d4c7aeaf7420c2c1.png",
+    "static/media/lipostyleePortfolioWebsite.png": "/static/media/lipostyleePortfolioWebsite.b30af47bc687a07885d1.png",
+    "static/media/smartrideWebsite.png": "/static/media/smartrideWebsite.982bb2433ee78aa11b91.png",
     "static/media/logo-hover.svg": "/static/media/logo-hover.dd97e632dbeb0f1979b6.svg",
-    "static/media/logo.svg": "/static/media/logo.a192985c6cd538f8672b.svg",
+    "static/media/logo.svg": "/static/media/logo.a192985c6cd538f8672bb556e9f5e2b0.svg",
     "static/media/background-hero.png": "/static/media/background-hero.27a0286d63e6d30d18d4.png",
     "static/media/me.png": "/static/media/me.780d5356885202e680f7.png",
     "static/media/smart-ride.png": "/static/media/smart-ride.285556ffad7f9ba4915d.png",
-    "static/media/background-image.jpg": "/static/media/background-image.311e85fcac4c2f817167.jpg",
-    "static/media/e-nutritionist.png": "/static/media/e-nutritionist.81f31332c92691878ef4.png",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/smartrideLogo.png": "/static/media/smartrideLogo.1ce493c3d01f0402d6ec.png",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
     "static/media/ruby.svg": "/static/media/ruby.9f7d96b6408a011abd1477050bc77a09.svg",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/enutritionistLogo.svg": "/static/media/enutritionistLogo.33220a78f8e9897b3eae825e8789bcb3.svg",
     "static/media/postgresql.svg": "/static/media/postgresql.8d3f3c3fe8129892a0dde9165da918bd.svg",
     "static/media/RoR.svg": "/static/media/RoR.42459e411e0092950e1ba8ad7b60bd25.svg",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "static/media/react.svg": "/static/media/react.22a05374f4eefdd120b71df3f98d68a1.svg",
     "static/media/slick.svg": "/static/media/slick.7ba97953187dc2907930.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
@@ -23,12 +33,11 @@
     "static/media/javascript.svg": "/static/media/javascript.c2d463fde72a01350f2e8cdd7797b7ba.svg",
     "static/media/css.svg": "/static/media/css.60e23942f41d4dc73de0d271b4453605.svg",
     "static/media/html.svg": "/static/media/html.bfc29cc664956a7748f9ee78fa82ec7b.svg",
-    "main.ee6c84d7.css.map": "/static/css/main.ee6c84d7.css.map",
-    "main.24309cdd.js.map": "/static/js/main.24309cdd.js.map",
-    "453.f3841e31.chunk.js.map": "/static/js/453.f3841e31.chunk.js.map"
+    "main.1242fcb8.css.map": "/static/css/main.1242fcb8.css.map",
+    "main.3cd504e7.js.map": "/static/js/main.3cd504e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee6c84d7.css",
-    "static/js/main.24309cdd.js"
+    "static/css/main.1242fcb8.css",
+    "static/js/main.3cd504e7.js"
   ]
 }

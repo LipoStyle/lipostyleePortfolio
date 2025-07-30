@@ -20,7 +20,7 @@
 }
 
 /* ===== Journey Container ===== */
-.my-jurney {
+.about-section-profile .my-jurney {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,7 +30,7 @@
 }
 
 /* ===== Each Journey Block ===== */
-.my-jurney > div {
+.about-section-profile .my-jurney > div {
   display: flex;
   flex-direction: row-reverse; /* default: image on right, text on left */
   justify-content: center;
@@ -40,12 +40,12 @@
 }
 
 /* Alternate layout for even blocks */
-.my-jurney > div:nth-child(even) {
+.about-section-profile .my-jurney > div:nth-child(even) {
   flex-direction: row;
 }
 
 /* ===== Image Styling ===== */
-.image-of-me {
+.about-section-profile .image-of-me {
   flex: 1;
   max-width: 400px;
   width: 100%;
@@ -56,13 +56,13 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.image-of-me:hover {
+.about-section-profile .image-of-me:hover {
   transform: scale(1.03);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
 /* ===== Text Content Styling ===== */
-.my-jurney .text-content {
+.about-section-profile .my-jurney .text-content {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -73,41 +73,41 @@
   text-align: center;
 }
 
-.my-jurney .text-content h3 {
+.about-section-profile .my-jurney .text-content h3 {
   font-size: 1.8rem;
   color: #e4523d;
   margin-bottom: 0.5rem;
 }
 
-.my-jurney .text-content p {
+.about-section-profile .my-jurney .text-content p {
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
 }
 
 /* ===== Animations ===== */
-.animate-child {
+.about-section-profile .animate-child {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.animate-child.visible {
+.about-section-profile .animate-child.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
 /* Slide animations for images */
-.slide-in-left {
+.about-section-profile .slide-in-left {
   transform: translateX(-50px);
 }
 
-.slide-in-right {
+.about-section-profile .slide-in-right {
   transform: translateX(50px);
 }
 
-.slide-in-left.visible,
-.slide-in-right.visible {
+.about-section-profile .slide-in-left.visible,
+.about-section-profile .slide-in-right.visible {
   opacity: 1;
   transform: translateX(0);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -115,40 +115,36 @@
 
 /* ===== Responsive ===== */
 @media (max-width: 992px) {
-  .about-section-profile h2 {
-    font-size: 2.5rem;
-  }
-
-  .my-jurney > div {
+  .about-section-profile .my-jurney > div {
     flex-direction: column !important; /* stack vertically */
     text-align: center;
   }
 
-  .my-jurney .text-content {
+  .about-section-profile .my-jurney .text-content {
     align-items: center;
-    max-width: 90%;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
   }
 
-  .image-of-me {
-    max-width: 250px;
+  .about-section-profile .image-of-me {
+    max-width: 320px;
     height: auto; /* prevent over-stretching on mobile */
   }
 }
 
 @media (max-width: 600px) {
-  .about-section-profile h2 {
-    font-size: 2rem;
+  .about-section-profile .about-section-profile h2 {
+    font-size: 36px;
   }
 
-  .my-jurney .text-content h3 {
-    font-size: 1.5rem;
+  .about-section-profile .my-jurney .text-content h3 {
+    font-size: 30px;
   }
 
-  .my-jurney .text-content p {
-    font-size: 0.95rem;
+  .about-section-profile .my-jurney .text-content p {
+    font-size: 15px;
   }
 
-  .image-of-me {
-    max-width: 180px;
-  }
 }

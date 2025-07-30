@@ -1,16 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/cyberjunkies');
-/* Reset default browser styles */
+
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  /* fonts setting for the page */
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-
   line-height: 1.2;
 }
 
+/* Root Variables */
+:root {
+  /* Colors */
+  --main-color: #0f436b;         /* Accent color for titles/links */
+  --accent-color: #e4523d;       /* Secondary highlight */
+  --text-color: #333;         /* Primary text */
+  --text-light: #6b6b6b;
+  --text-mustard: #f2e2d0;         /* Muted text */
+  --bg-color: #ffffff;           /* Default background */
+  --bg-color-blue: #82a7c6;           /* Default background */
+  --bg-color-orange: #ff6347b3;           /* Default background */
+  --card-bg: #f8f8f8;            /* Card background */
+  --hover-bg: #eaeaea;           /* Hover state background */
+  --border-color: #ddd;          /* Border color */
+
+
+  /* Fonts */
+  --main-font: "Montserrat", sans-serif;
+  --heading-font: "Cyberjunkies", sans-serif;
+
+  /* Font Sizes */
+  --fs-xl: 2.5rem;   /* Section titles */
+  --fs-lg: 1.8rem;   /* Column titles */
+  --fs-md: 1.2rem;   /* Item titles */
+  --fs-sm: 1rem;     /* Paragraph text */
+
+  /* Spacing Scale */
+  --space-xl: 4rem;
+  --space-lg: 2.5rem;
+  --space-md: 1.5rem;
+  --space-sm: 1rem;
+  --space-xs: 0.5rem;
+
+  /* Borders & Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* Transitions */
+  --transition: 0.3s ease-in-out;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}

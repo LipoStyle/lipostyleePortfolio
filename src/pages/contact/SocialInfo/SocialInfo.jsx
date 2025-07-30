@@ -8,22 +8,22 @@ const SocialInfo = () => {
       <p className="social-subtext">I'd love to connect with you! Feel free to reach out through any of the platforms below.</p>
       <ul>
         <li className='linkedin'>
-          <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/lipo-manuel" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-linkedin"></i> LinkedIn
           </a>
         </li>
         <li>
-          <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/LipoStyle" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github"></i> GitHub
           </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/lipostyle.Profile/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook"></i> Facebook
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/lipostyle/" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-instagram"></i> Instagram
           </a>
         </li>
